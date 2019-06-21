@@ -1,0 +1,15 @@
+<ion-content >
+<div class="fondo">
+  <ion-button routerLink="/" expand="block"> <ion-icon name="return-left"></ion-icon></ion-button>
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+
+  
+  <ion-fab vertical="botton" horizontal="center" >
+      <ion-fab-button (click)="mostrarpop($event)" >
+        <ion-icon name="pin"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+</div>
+</ion-content>
